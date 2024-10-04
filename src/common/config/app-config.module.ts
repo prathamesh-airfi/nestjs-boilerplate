@@ -1,15 +1,16 @@
-import { Global, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { AppConfigService } from './app-config.service';
+import { Global, Module } from '@nestjs/common';
+
 import { envSchema } from './env.validation';
+import { AppConfigService } from './app-config.service';
 
 @Global()
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true,
-      envFilePath: `.env.${process.env.NODE_ENV}`,
+      isGlobal: false,
       validationSchema: envSchema,
+      envFilePath: `.env.${process.env.NODE_ENV}`,
     }),
   ],
   providers: [AppConfigService],

@@ -1,7 +1,7 @@
 import { ForbiddenException } from '@nestjs/common';
 import { CustomOrigin } from '@nestjs/common/interfaces/external/cors-options.interface';
 
-import { AppConfigService } from '../config/app-config.service';
+import { AppConfigService } from '@config/app-config.service';
 
 export const enableCors = (
   appConfigService: AppConfigService,

@@ -16,6 +16,22 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": ["src/*"],
+      "@app/*": ["src/app/*"],
+      "@auth/*": ["src/auth/*"],
+      "@common/*": ["src/common/*"],
+      "@config/*": ["src/common/config/*"],
+      "@constants/*": ["src/common/constants/*"],
+      "@customer/*": ["src/customer/*"],
+      "@decorators/*": ["src/common/decorators/*"],
+      "@enums/*": ["src/common/enums/*"],
+      "@helpers/*": ["src/common/helpers/*"],
+      "@interceptors/*": ["src/common/interceptors/*"],
+      "@roles/*": ["src/roles/*"],
+      "@user/*": ["src/user/*"],
+      "@utils/*": ["src/common/utils/*"]
+    }
   }
 }

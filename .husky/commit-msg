@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# INPUT_FILE=$1
+# START_LINE=`head -n1 $INPUT_FILE`
+# PATTERN="^(AP2)-[[:digit:]]+ "
+# if ! [[ "$START_LINE" =~ $PATTERN ]]; then
+#   echo "Commit should be of format: <ticketNumber> <commit message>"
+#   exit 1
+# fi

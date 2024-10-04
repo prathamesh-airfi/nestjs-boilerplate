@@ -12,11 +12,11 @@ import { InjectConnection, MongooseModule } from '@nestjs/mongoose';
 import { RedisModule, RedisService } from '@liaoliaots/nestjs-redis';
 
 import { AppService } from './app.service';
-import { AuthModule } from '../auth/auth.module';
+import { AuthModule } from '@auth/auth.module';
+import { UserModule } from '@user/user.module';
 import { AppController } from './app.controller';
-import { UserModule } from '../user/user.module';
-import { AppConfigModule } from '../common/config/app-config.module';
-import { AppConfigService } from '../common/config/app-config.service';
+import { AppConfigModule } from '@config/app-config.module';
+import { AppConfigService } from '@config/app-config.service';
 
 @Module({
   imports: [

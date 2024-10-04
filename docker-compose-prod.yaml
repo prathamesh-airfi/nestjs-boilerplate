@@ -1,0 +1,12 @@
+services:
+  api:
+    image: portal-v2-api-prod
+    container_name: api-service
+    env_file:
+      - .env.production
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - "80:3000"  # Port 80 on the host maps to 3000 on the container
+    restart: always

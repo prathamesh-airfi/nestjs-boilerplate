@@ -3,7 +3,7 @@ import { Controller, Get, NotFoundException } from '@nestjs/common';
 
 import { UserDto } from './dtos/user.dto';
 import { UserService } from './user.service';
-import { Serialize } from '../common/interceptors/serialize.interceptor';
+import { Serialize } from '@interceptors/serialize.interceptor';
 
 @ApiTags('Users')
 @Serialize(UserDto)

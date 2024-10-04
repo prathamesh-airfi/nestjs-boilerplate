@@ -9,15 +9,15 @@ import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { NestExpressApplication } from '@nestjs/platform-express';
 
 import {
-  getDatabaseStatus,
   getRedisStatus,
+  getDatabaseStatus,
   getNodeEnvironment,
   getApplicationPort,
   getFormattedConsole,
-} from './common/helpers/console.helper';
-import { AppModule } from './app/app.module';
-import { enableCors } from './common/helpers/cors.helper';
-import { AppConfigService } from './common/config/app-config.service';
+} from '@helpers/console.helper';
+import { AppModule } from '@app/app.module';
+import { enableCors } from '@helpers/cors.helper';
+import { AppConfigService } from '@config/app-config.service';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
