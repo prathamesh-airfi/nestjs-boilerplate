@@ -58,3 +58,6 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Redis database file
 dump.rdb
+
+# Compodoc Code documentation
+documentation

@@ -28,7 +28,7 @@ export class AppConfigService {
     return this.configService.get<number>('PORT') || 3000;
   }
 
-  get redisUri() {
+  get redisUri(): string {
     return this.configService.get<string>('REDIS_URI');
   }
 }
